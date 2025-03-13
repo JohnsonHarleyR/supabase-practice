@@ -11,15 +11,12 @@ async function getBooks() {
 
     let tableBody = document.getElementById('book-rows');
     for (let book of books) {
-        console.log(book);
         tableBody.innerHTML += `<tr>
             <td>${book.title}</td>
             <td>${book.author}</td>
             <td>${book.isbn}</td>
         </tr>`;
     }
-
-    console.log(books);
 }
 
 getBooks();
